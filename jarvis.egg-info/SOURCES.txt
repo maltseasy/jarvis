@@ -1,0 +1,11 @@
+setup.py
+jarvis.egg-info/PKG-INFO
+jarvis.egg-info/SOURCES.txt
+jarvis.egg-info/dependency_links.txt
+jarvis.egg-info/entry_points.txt
+jarvis.egg-info/requires.txt
+jarvis.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+src/speech_recognition/__init__.py
+src/speech_recognition/__main__.py
