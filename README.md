@@ -1,7 +1,8 @@
 Jarvis - Voice commands on Ubuntu
 =================
 
-Plug and play library for voice commands in Ubuntu, just say, "yo jarvis"
+
+Plug and play library for voice commands in Ubuntu, just say, *yo jarvis*
 
 **Installation:** 
 ``sudo add-apt-repository ppa:aryanmisra4/jarvis-dev``
@@ -20,23 +21,26 @@ Project links:
 Requirements
 ------------
 
-* **Python** 3.5+ (required)
+* **Python** 3.5+
 
-* **PyAudio** 0.2.11+ (required only if you need to use microphone input, ``Microphone``)
+* **PyAudio** 0.2.11+
 
-Install PyAudio using `APT <https://wiki.debian.org/Apt>`__: execute ``sudo apt-get install python-pyaudio python3-pyaudio`` in a terminal.
+To install, execute ``sudo apt-get install python-pyaudio python3-pyaudio`` in a terminal.
 
-* **Python Packages Required:** python3-requests, python3-pyaudio, python3-setuptools
+* **Python Packages Required:** 
+
+`python3-requests, python3-pyaudio, python3-setuptools`
+
 
 Authors
 -------
 
-::
 
-    Aryan Misra <aryanmisra4@gmail.com> 
-    William Law <horizon.william14@gmail.com>
+    ``Aryan Misra <aryanmisra4@gmail.com> ``
+    ``William Law <horizon.william14@gmail.com>``
 
 Please report bugs and suggestions at the `issue tracker <https://github.com/aryanmisra/jarvis/issues>`__!
+
 
 
 License
