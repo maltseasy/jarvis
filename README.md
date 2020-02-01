@@ -36,7 +36,7 @@ Authors
 -------
 
 
-    ``Aryan Misra <aryanmisra4@gmail.com> ``
-    ``William Law <horizon.william14@gmail.com>``
+    Aryan Misra <aryanmisra4@gmail.com> 
+    William Law <horizon.william14@gmail.com>
 
-Please report bugs and suggestions at the `issue tracker <https://github.com/aryanmisra/jarvis/issues>`__!
+Please report bugs and suggestions at the `issue tracker <https://github.com/aryanmisra/jarvis/issues>`!
