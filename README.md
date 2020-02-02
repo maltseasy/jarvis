@@ -39,4 +39,4 @@ Authors
     Aryan Misra <aryanmisra4@gmail.com> 
     William Law <williamlaw.wtl@gmail.com>
 
-Please report bugs and suggestions at the `issue tracker <https://github.com/aryanmisra/jarvis/issues>`!
+Please report bugs and suggestions at the issue tracker <https://github.com/aryanmisra/jarvis/issues>!
