@@ -1,10 +1,13 @@
+# libs
 import speech_recognition as sr
-import subprocess
+import subprocess as s
 import os
 import fnmatch
 
-#import keyword as k
+# dependencies
 from rake_nltk import Rake
+from win10toast import ToastNotifier
+from sys import platform
 
 r = sr.Recognizer()
 recog_list = [
@@ -52,9 +55,6 @@ def mic_test():
                     wordseq = r.recognize_google(audio)
                     print(wordseq)
 
-                    list_words = []
-                    list_words.append(wordseq)
-
                     try:
                         wordseq_tokens = wordseq.lower().split()
                         print(wordseq_tokens)
@@ -62,20 +62,34 @@ def mic_test():
                         # build sentiment analysis here
                         rake = Rake()
                         rake.extract_keywords_from_text(wordseq)
-                        print(rake.get_ranked_phrases())
+
+                        keywords = rake.get_ranked_phrases()
+                        print(keywords)
 
                         # analyze sentiment and execute
-                        for word in wordseq_tokens:
-                            if word == "open":
+                        for k_word in keywords:
+                            if k_word == "time":
+                                print("The time right now is 11:43 pm")
+                            elif k_word == "open":
                                 # file search
-                                subprocess.call("D:\\osu\\osu!.exe")
+                                s.call("D:\\osu\\osu!.exe")
+                            elif k_word == "remind":
+                                if platform == "linux" or platform == "linux2" or platform == "darwin":
+                                    s.call(
+                                        ["notify-send", "INSERT_MSG_HERE"])
+                                elif platform == "win32":
+                                    toaster = ToastNotifier()
+                                    toaster.show_toast(
+                                        "This is your reminder to: ", duration=10)
+                                    while toaster.notification_active():
+                                        time.sleep(0.1)
                     except:
                         print("Error occurred in obtaining the tokens")
             else:
                 print("Please activate Jarvis")
 
         except sr.UnknownValueError:
-            print("Google Speech Recognition could not understand audio")
+            print("Jarvis deactivated, please call on it to reactive it")
 
         except sr.RequestError as e:
             print(
