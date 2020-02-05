@@ -1,5 +1,5 @@
-jarvis (0.0.3) eoan; urgency=medium
+jarvis (0.0.4-1) unstable; urgency=medium
 
-  * Additional release.
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- Aryan Misra <aryanmisra4@gmail.com>  Fri, 31 Jan 2020 13:26:24 -0500
+ -- Aryan Misra <aryanmisra4@gmail.com>  Sun, 02 Feb 2020 06:18:03 -0500

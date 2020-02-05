@@ -1,0 +1,10 @@
+Package: jarvis
+Version: 0.0.4-1
+Architecture: all
+Maintainer: Aryan Misra <aryanmisra4@gmail.com>
+Installed-Size: 19413
+Section: unknown
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
